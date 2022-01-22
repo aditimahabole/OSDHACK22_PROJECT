@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>A.R.Rahman</title>
+</head>
+
+
+<body>
+    
+    <section class="begin">
+        <div class="left">
+            <hr class="line"><br>
+          <div class=in>
+              <div class=" icons home">
+                <a href=""><i class="fas fa-home" style="user-select: auto;"></i></a>
+                <a href=""><h2>Home</h2></a>
+                
+                
+              </div><br>
+              <hr class="line">
+              
+             
+          </div>
+        </div>
+
+
+        <div class="right">
+          <div class="nav">
+            <div class="l">
+                <div class="l1">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="l2">
+                 <h1>Musica</h1>
+                </div>
+                
+            </div>
+        </div>
+        
+          <div class="name">
+            <div class="verified">
+              <div class="v">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="v">
+                <p>Verified Artist</p>
+              </div>
+             <div class="v">
+                <i class="fas fa-check"></i>
+             </div>
+             
+            </div>
+            <div class="name1">
+              <h1 class ="arhead">A.R.Rahman</h1>
+            </div>
+           
+          </div>
+
+          <div class="a2">
+            <div class="a22" >
+              <h2>A.R Rahman</h2>
+            </div>
+          </div>
+          <div class="songs">
+            <div class="song1 ss1">
+              <div class="s1">
+                <i class="fas fa-compact-disc "></i>
+              </div>
+              <div class="s2">
+               <span><h3>Param Sundri</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle" id="par"></i>
+               <audio id="mySong1">
+                 <source src="param.mp3" type ="audio/mp3">
+               </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+             
+            </div>
+
+            <div class="song1 ss2">
+              <div class="s1">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="s2">
+               <span><h3>Jashn-E-Bahara</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle" id="j"></i>
+               
+              </div>
+              <audio id="mySong2">
+                <source src="jashn.mp3" type ="audio/mp3">
+              </audio>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+
+            <div class="song1 ss3">
+              <div class="s1">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="s2">
+               <span><h3>Kun Faya Kun</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle" id ="k"></i>
+               <audio id="mySong3">
+                <source src="kun.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+
+            <div class="song1 ss4">
+              <div class="s1">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="s2">
+               <span><h3>Masakali</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle" id="m"></i>
+               <audio id="mySong4">
+                <source src="masakali.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+
+            <div class="song1 ss5">
+              <div class="s1">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <div class="s2">
+               <span><h3>Chakachak</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle" id="c"></i>
+               <audio id="mySong5">
+                <source src="chaka.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+
+      </div>
+      
+        
+    </section>
+  
+</body>
+<script>
+  var mySong=document.getElementById("mySong1");
+  var icon=document.getElementById("par");
+  icon.onclick=function()
+  {
+    if(mySong.paused)
+    {
+        mySong.play();
+        icon.style.backgroundColor="green";
+        icon.style.borderRadius="75px";
+
+    }
+    else 
+    {
+      icon.style.backgroundColor="transparent";
+        mySong.pause();
+    }
+  }
+
+  mySong=document.getElementById("mySong2");
+  icon=document.getElementById("j");
+  icon.onclick=function()
+  {
+    if(mySong.paused)
+    {
+        mySong.play();
+        icon.style.backgroundColor="green";
+        icon.style.borderRadius="75px";
+
+    }
+    else 
+    {
+      icon.style.backgroundColor="transparent";
+        mySong.pause();
+    }
+  }
+   mySong=document.getElementById("mySong3");
+   icon=document.getElementById("k");
+  icon.onclick=function()
+  {
+    if(mySong.paused)
+    {
+        mySong.play();
+        icon.style.backgroundColor="green";
+        icon.style.borderRadius="75px";
+
+    }
+    else 
+    {
+      icon.style.backgroundColor="transparent";
+        mySong.pause();
+    }
+  }
+  mySong=document.getElementById("mySong4");
+  icon=document.getElementById("m");
+  icon.onclick=function()
+  {
+    if(mySong.paused)
+    {
+        mySong.play();
+        icon.style.backgroundColor="green";
+        icon.style.borderRadius="75px";
+
+    }
+    else 
+    {
+      icon.style.backgroundColor="transparent";
+        mySong.pause();
+    }
+  }
+  mySong=document.getElementById("mySong5");
+   icon=document.getElementById("c");
+  icon.onclick=function()
+  {
+    if(mySong.paused)
+    {
+        mySong.play();
+        icon.style.backgroundColor="green";
+        icon.style.borderRadius="75px";
+
+    }
+    else 
+    {
+      icon.style.backgroundColor="transparent";
+        mySong.pause();
+    }
+  }
+
+
+
+</script>
+</html>

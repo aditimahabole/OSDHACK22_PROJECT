@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://fonts.google.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+</head>
+<style>
+  
+</style>
+<body>
+    
+    <section class="begin">
+        <div class="left">
+            <hr class="line"><br>
+          <div class=in>
+              <div class=" icons home">
+                <a href=""><i class="fas fa-home" style="user-select: auto;"></i></a>
+                <a href=""><h2>Home</h2></a>
+                
+                
+              </div>
+              <br>
+            
+              <hr class="line">
+              
+             
+          </div>
+        </div>
+        <div class="right">
+            
+        <div class="nav">
+            <div class="l">
+                <div class="l1">
+                    <i class="fas fa-music"></i>
+                </div>
+               <div class="l2">
+                <h1>Musica</h1>
+               </div>
+                
+            </div>
+
+            <div class="r">
+                <a href="">login</a>
+                <a href="">signup</a>
+
+            </div>
+        
+        </div>
+        <div class="main">
+            <div class="artist">
+                <h1>Popular Artists</h1><br>
+                <div class="art">
+                    <div class="1 box">
+                        <img src="ar.png" alt="">
+                        <div class="img-content">
+                            <a href="ar.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="2 box">
+                        <img src="arjit.png" alt="">
+                        <div class="img-content">
+                            <a href="arjit.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="3 box">
+                        <img src="arman.png" alt="">
+                        <div class="img-content">
+                            <a href="arman.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="4 box">
+                        <img src="bts.png" alt="">
+                        <div class="img-content">
+                            <a href="bts.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                <br>
+                <div class="art">
+                    <div class="5 box">
+                        <img src="jubin.png" alt="">
+                        <div class="img-content">
+                            <a href="jubin.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="6 box">
+                        <img src="justin.png" alt="">
+                        <div class="img-content">
+                            <a href="justin.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div> -->
+                    <div class="7 box">
+                        <img src="neha.png" alt="">
+                        <div class="img-content">
+                            <a href="neha.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="8 box">
+                        <img src="sonu.png" alt="">
+                        <div class="img-content">
+                            <a href="sonu.html"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+          </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+    var mySong=document.getElementById("mySong");
+    var icon=document.getElementById("par");
+    icon.onclick=function()
+    {
+      if(mySong.paused)
+      {
+          mySong.play();
+          icon.style.backgroundColor="green";
+          icon.style.borderRadius="75px";
+
+      }
+      else 
+      {
+        icon.style.backgroundColor="transparent";
+          mySong.pause();
+      }
+    }
+  </script>
+</html>

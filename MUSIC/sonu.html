@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sonu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sonu Nigam</title>
+</head>
+<body>
+    
+    <section class="begin">
+        <div class="left">
+            <hr class="line"><br>
+          <div class=in>
+              <div class=" icons home">
+                <a href=""><i class="fas fa-home" style="user-select: auto;"></i></a>
+                <a href=""><h2>Home</h2></a>
+                
+                
+              </div><br>
+              <!-- <div class=" icons search">
+                <a href=""><i class="fas fa-search"></i></a>
+                <a href=""><h2>Search</h2></a>
+
+              </div><br>
+              <div class=" icons ">
+                <a href=""><i class="fas fa-plus-square" style="user-select: auto;"></i></a>
+                <a href=""><h2>Make Playlist</h2></a>
+
+              </div><br>
+              <div class=" icons ">
+                <a href=""><i class="far fa-heart"></i></a>
+                <a href=""><h2>Liked Songs</h2></a>
+
+              </div><br> -->
+              <hr class="line">
+              
+             
+          </div>
+        </div>
+
+
+        <div class="right">
+          <div class="nav">
+            <div class="l">
+                <div class="l1">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="l2">
+                 <h1>Musica</h1>
+                </div>
+                
+            </div>
+        </div>
+        
+          <div class="name">
+            <div class="verified">
+              <div class="v">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="v">
+                <p>Verified Artist</p>
+              </div>
+             <div class="v">
+                <i class="fas fa-check"></i>
+             </div>
+             
+            </div>
+            <div class="name1">
+              <h1 class ="arhead">Sonu Nigam</h1>
+            </div>
+           
+          </div>
+
+          <div class="a2">
+            <div class="a22" >
+              <h2>Sonu Nigam</h2>
+            </div>
+          </div>
+          <div class="songs">
+            <div class="song1 ss1">
+              <div class="s1">
+                <a href=""><i class="fas fa-compact-disc"></i></a>
+              </div>
+              <div class="s2">
+               <span><h3>Soniyo</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle"></i>
+               <audio id="mySong1">
+                <source src="soniyo.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+             
+            </div>
+
+            <div class="song1 ss2">
+              <div class="s1">
+                <a href=""><i class="fas fa-compact-disc"></i></a>
+              </div>
+              <div class="s2">
+               <span><h3>Zoobi Doobi</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle"></i>
+               <audio id="mySong2">
+                <source src="zobidobi.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+
+            <div class="song1 ss3">
+              <div class="s1">
+                <a href=""><i class="fas fa-compact-disc"></i></a>
+              </div>
+              <div class="s2">
+               <span><h3>Maahi Ve</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle"></i>
+               <audio id="mySong3">
+                <source src="mahive.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+
+            <div class="song1 ss4">
+              <div class="s1">
+                <a href=""><i class="fas fa-compact-disc"></i></a>
+              </div>
+              <div class="s2">
+               <span><h3>Chori Chori</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle"></i>
+               <audio id="mySong4">
+                <source src="chori.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+             
+            </div>
+
+            <div class="song1 ss5">
+              <div class="s1">
+                <a href=""><i class="fas fa-compact-disc"></i></a>
+              </div>
+              <div class="s2">
+               <span><h3>Tanhayee</h3></span>
+             </div>
+              <div class="s3">
+               <i class="far fa-play-circle"></i>
+               <audio id="mySong5">
+                <source src="tanhai.mp3" type ="audio/mp3">
+              </audio>
+              </div>
+              <!-- <div class="s4">
+                <a href=""><i class="far fa-heart"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+
+      </div>
+      
+        
+    </section>
+  
+</body>
+<script>
+  var mySong=document.getElementById("mySong");
+  var icon=document.getElementById("par");
+  icon.onclick=function()
+  {
+    if(mySong.paused)
+    {
+        mySong.play();
+        icon.style.backgroundColor="green";
+        icon.style.borderRadius="75px";
+
+    }
+    else 
+    {
+      icon.style.backgroundColor="transparent";
+        mySong.pause();
+    }
+  }
+</script>
+</html>
